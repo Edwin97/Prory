@@ -91,7 +91,7 @@ struct HomeView: View {
                     SummaryView()
                 }
                 .padding(.top, 10)
-                  Spacer(minLength: 0)
+                Spacer(minLength: 0)
             }
             .edgesIgnoringSafeArea(.top)
         }
