@@ -17,7 +17,7 @@ struct AppView: View {
                     Text("Home")
             }
             
-            RequestView()
+            AddRequestView()
                 .tabItem {
                     Image(systemName: "list.dash")
                     Text("Service Request")

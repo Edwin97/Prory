@@ -15,7 +15,7 @@
 		E8175AED24C41E58005C3944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175AEB24C41E58005C3944 /* LaunchScreen.storyboard */; };
 		E8175AF924C41EA4005C3944 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175AF824C41EA4005C3944 /* AppView.swift */; };
 		E8175AFB24C41F4B005C3944 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175AFA24C41F4B005C3944 /* HomeView.swift */; };
-		E8175B0124C43148005C3944 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0024C43148005C3944 /* RequestView.swift */; };
+		E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0024C43148005C3944 /* AddRequestView.swift */; };
 		E8175B0324C4315C005C3944 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0224C4315C005C3944 /* ReportView.swift */; };
 		E8175B0524C4316D005C3944 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0424C4316D005C3944 /* TransactionView.swift */; };
 		E8175B0724C446EF005C3944 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0624C446EF005C3944 /* Category.swift */; };
@@ -24,6 +24,7 @@
 		E874011A24C4C71700265271 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011924C4C71700265271 /* PropertyCell.swift */; };
 		E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011B24C4C8BB00265271 /* ServiceCategory.swift */; };
 		E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011D24C4C9DC00265271 /* PropertyView.swift */; };
+		E874012024C4CDD300265271 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011F24C4CDD300265271 /* RequestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,7 @@
 		E8175AEE24C41E58005C3944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8175AF824C41EA4005C3944 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		E8175AFA24C41F4B005C3944 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E8175B0024C43148005C3944 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		E8175B0024C43148005C3944 /* AddRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestView.swift; sourceTree = "<group>"; };
 		E8175B0224C4315C005C3944 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		E8175B0424C4316D005C3944 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		E8175B0624C446EF005C3944 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		E874011924C4C71700265271 /* PropertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
 		E874011B24C4C8BB00265271 /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		E874011D24C4C9DC00265271 /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
+		E874011F24C4CDD300265271 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +143,10 @@
 		E8692A8624C4C201008A774D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E8175B0024C43148005C3944 /* RequestView.swift */,
+				E8175B0024C43148005C3944 /* AddRequestView.swift */,
 				E874011924C4C71700265271 /* PropertyCell.swift */,
 				E874011B24C4C8BB00265271 /* ServiceCategory.swift */,
+				E874011F24C4CDD300265271 /* RequestView.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -223,7 +226,8 @@
 				E8175B0524C4316D005C3944 /* TransactionView.swift in Sources */,
 				E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */,
 				E8175AE124C41E53005C3944 /* AppDelegate.swift in Sources */,
-				E8175B0124C43148005C3944 /* RequestView.swift in Sources */,
+				E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */,
+				E874012024C4CDD300265271 /* RequestView.swift in Sources */,
 				E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */,
 				E8692A8424C4B7DE008A774D /* MoveView.swift in Sources */,
 				E8175AE324C41E53005C3944 /* SceneDelegate.swift in Sources */,

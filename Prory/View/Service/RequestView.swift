@@ -2,16 +2,13 @@
 //  RequestView.swift
 //  Prory
 //
-//  Created by edwin on 19/07/2020.
+//  Created by edwin on 20/07/2020.
 //  Copyright © 2020 edwin. All rights reserved.
 //
 
 import SwiftUI
 
 struct RequestView: View {
-    @State private var title: String = ""
-    @State private var description: String = ""
-    
     var body: some View {
         ZStack {
             Color("background")
@@ -23,7 +20,7 @@ struct RequestView: View {
                     VStack(alignment: .leading) {
                         
                         HStack(spacing: 10){
-                            Text("New Service Request")
+                            Text("Request")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
@@ -47,48 +44,66 @@ struct RequestView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         
-                        VStack(alignment: .leading) {
-                            Text("Choose Property")
-                                .font(.subheadline)
-                                .bold()
-                            PropertyCell()
-                        }
-                        
-                        VStack(alignment: .leading) {
-                            Text("Choose Categories")
-                                .font(.subheadline)
-                                .bold()
-                            ServiceCategory()
-                        }
-                        
-                        VStack(alignment: .leading) {
-                            Text("Service Request Title")
-                                .font(.subheadline)
-                                .bold()
-                            
-                            TextField("Enter your name", text: $title)
+                        ForEach(0..<5) { _ in
+                            VStack(spacing: 10) {
+                                HStack() {
+                                    VStack(alignment: .leading) {
+                                        
+                                        Text("Belvedere-1402")
+                                            .font(.caption)
+                                        Text("Managed Properties")
+                                            .bold()
+                                            .font(.subheadline)
+                                    }
+                                    Spacer()
+                                }
                                 
-                                .frame(height: 40)
-                                .padding([.leading, .trailing], 10)
+                                VStack(alignment: .leading, spacing: 4) {
+                                    HStack() {
+                                        
+                                        Image(systemName: "house")
+                                            .resizable()
+                                            .frame(width: 10, height: 10)
+                                        Text("Eletrical")
+                                            .font(.footnote)
+                                    }
+                                    
+                                    Text("Fridge is not working")
+                                        .bold()
+                                    Text("The fidge is leaking water and is not able to cool properly for last 15 days")
+                                        .font(.footnote)
+                                    
+                                    Spacer()
+                                    
+                                }
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color("background"), lineWidth: 2)
+                                )
+                                
+                                HStack() {
+                                    
+                                    VStack(alignment: .leading) {
+                                        
+                                        Text("Requestor: Anuj Vernua (Tenant)")
+                                            .font(.footnote)
+                                        Text("Vendor: Rekesh (LG Service)")
+                                            .font(.footnote)
+                                    }
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                }
+                                
+                                
+                                
+                            }   .padding()
                                 .background(Color.white)
                                 .cornerRadius(10)
-                            
-                        }.padding()
-                        
-                        VStack(alignment: .leading) {
-                            Text("Description")
-                                .font(.subheadline)
-                                .bold()
-                            
-                            TextField("Enter your name", text: $title)
-                                
-                                .frame(height: 40)
-                                .padding([.leading, .trailing], 10)
-                                .background(Color.white)
-                                .cornerRadius(10)
-                            
-                        }.padding()
-                        
+                                .padding(.leading)
+                                .padding(.trailing)
+                                .padding(.top)
+                        }
                     }
                     
                     Spacer(minLength: 0)
