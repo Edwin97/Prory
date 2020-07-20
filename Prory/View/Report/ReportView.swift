@@ -24,14 +24,13 @@ struct ReportView: View {
                         Text("Reports")
                             .font(.title)
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
                         
                         Spacer()
                     }
                 }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
                 .padding()
-                .background(Color.blue)
+                .background(  Color.white)
 
                 
                 ScrollView(.vertical, showsIndicators: false) {

@@ -21,13 +21,13 @@ struct TransactionView: View {
                         Text("Transactions")
                             .font(.title)
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
+                            
                         Spacer()
                     }
                 }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
                 .padding()
-                .background(Color.blue)
+                .background(Color.white)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack() {
@@ -37,15 +37,14 @@ struct TransactionView: View {
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text("B-1402")
                                         .font(.caption)
-                                        .foregroundColor(.white)
                                     
                                     Text("Lodha Aurum Grande")
                                         .font(.subheadline)
                                         .bold()
-                                        .foregroundColor(.white)
+                            
                                     Text("Versova, Mumbai")
                                         .font(.caption)
-                                        .foregroundColor(.white)
+                                      
                                 }
                                 
                                 HStack {
@@ -53,11 +52,11 @@ struct TransactionView: View {
                                         Text("Ramesh Morya")
                                             .font(.subheadline)
                                             .bold()
-                                            .foregroundColor(.white)
+                                      
                                         
                                         Text("Property Manager")
                                             .font(.caption)
-                                            .foregroundColor(.white)
+                                           
                                     }
                                     
                                     Spacer()
@@ -65,17 +64,19 @@ struct TransactionView: View {
                                     Image(systemName: "message.circle.fill")
                                         .resizable()
                                         .frame(width: 35, height: 35)
-                                        .foregroundColor(.white)
+                                        .foregroundColor(Color.blue)
+                                     
                                     
                                     Image(systemName: "phone.circle.fill")
                                         .resizable()
                                         .frame(width: 35, height: 35)
-                                        .foregroundColor(.white)
+                                        .foregroundColor(Color.blue)
+                                       
 
                                 }
                                 Text("Leased from July 2019 - 2019")
                                     .font(.subheadline)
-                                    .foregroundColor(.white)
+                                    
                             }
                             Spacer()
                         }.padding([.top, .leading, .trailing])
@@ -91,10 +92,10 @@ struct TransactionView: View {
                                                 Text("Owner Details")
                                                     .font(.footnote)
                                                     .bold()
-                                                    .foregroundColor(.white)
+                                                  
                                                 Spacer()
                                                 Image(systemName: "info.circle")
-                                                    .foregroundColor(.white)
+                                                   
                                             }
                                         }
                                     }
@@ -105,7 +106,7 @@ struct TransactionView: View {
                         }
                         .padding()
                     }
-                    .background(Color.blue)
+                    .background(  Color.white)
                         .cornerRadius(10)
                         .padding(.leading)
                         .padding(.trailing)

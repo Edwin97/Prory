@@ -26,6 +26,7 @@
 		E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011B24C4C8BB00265271 /* ServiceCategory.swift */; };
 		E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011D24C4C9DC00265271 /* PropertyView.swift */; };
 		E874012024C4CDD300265271 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011F24C4CDD300265271 /* ServiceView.swift */; };
+		E881573324C5FA11008802E1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881573224C5FA11008802E1 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E874011B24C4C8BB00265271 /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		E874011D24C4C9DC00265271 /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
 		E874011F24C4CDD300265271 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
+		E881573224C5FA11008802E1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				E8175B1024C4B138005C3944 /* Report */,
 				E8175B0824C44895005C3944 /* Home */,
 				E8175AF824C41EA4005C3944 /* AppView.swift */,
+				E881573224C5FA11008802E1 /* WelcomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */,
 				E8175AE124C41E53005C3944 /* AppDelegate.swift in Sources */,
 				E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */,
+				E881573324C5FA11008802E1 /* WelcomeView.swift in Sources */,
 				E874012024C4CDD300265271 /* ServiceView.swift in Sources */,
 				E842165024C56D8400E2920E /* PropertyDetailView.swift in Sources */,
 				E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */,
