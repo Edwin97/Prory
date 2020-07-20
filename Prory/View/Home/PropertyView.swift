@@ -16,7 +16,7 @@ struct PropertyView: View {
                 .edgesIgnoringSafeArea(.all)
             
             ScrollView(.vertical, showsIndicators: false) {
-                ForEach(0..<5) { _ in
+                ForEach(0..<2) { _ in
                     VStack(spacing: 10) {
                         HStack() {
                             VStack(alignment: .leading) {
@@ -36,10 +36,10 @@ struct PropertyView: View {
                                 HStack() {
                                     
                                     VStack(alignment: .leading) {
-                                        Text("RM 42,000")
-                                            .font(.footnote)
+                                        Text("RM 16,81,000")
+                                            .font(.subheadline)
                                             .bold()
-                                        Text("Current Rent")
+                                        Text("Total Rent Revenue")
                                             .font(.footnote)
                                     }.padding()
                                     Spacer()

@@ -35,6 +35,7 @@ struct MoveView: View {
                     
                     Text("Move-in")
                         .font(.footnote)
+                        .foregroundColor(Color("default"))
                     Text("10 Jan 2019")
                         .bold()
                         .font(.footnote)
@@ -49,7 +50,7 @@ struct MoveView: View {
                 
                 Image("profile")
                     .resizable()
-                    .frame(width: 35, height: 35)
+                    .frame(width: 40, height: 40)
                     .cornerRadius(10)
                 VStack(alignment: .leading) {
                     
@@ -58,9 +59,11 @@ struct MoveView: View {
                         .bold()
                     Text("Product Manager, SpashLearn")
                         .font(.caption)
+                        .foregroundColor(Color("default"))
                 }
                 Spacer()
                 Image(systemName: "chevron.right")
+                     .foregroundColor(Color("default"))
             }
             
             

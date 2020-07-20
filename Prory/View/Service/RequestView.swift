@@ -41,6 +41,24 @@ struct RequestView: View {
                     .padding()
                     .background(Color.blue)
                     
+                    Button(action: {}) {
+                        HStack() {
+                            Spacer()
+                            Text("Create Service Request".uppercased())
+                                .font(.subheadline)
+                                .bold()
+                            
+                            Image(systemName: "arrow.right")
+                            
+                            Spacer()
+                        }
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.yellow)
+                    .cornerRadius(10)
+                    .padding(.leading)
+                    .padding(.trailing)
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         
@@ -66,6 +84,8 @@ struct RequestView: View {
                                             .frame(width: 10, height: 10)
                                         Text("Eletrical")
                                             .font(.footnote)
+                                        
+                                        Spacer()
                                     }
                                     
                                     Text("Fridge is not working")
@@ -92,7 +112,7 @@ struct RequestView: View {
                                             .font(.footnote)
                                     }
                                     Spacer()
-                                    Image(systemName: "chevron.right")
+                        
                                 }
                                 
                                 

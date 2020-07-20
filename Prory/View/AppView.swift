@@ -9,32 +9,38 @@
 import SwiftUI
 
 struct AppView: View {
+    
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = UIColor(named: "default")
+      }
+    
     var body: some View {
         TabView {
             HomeView()
                 .tabItem {
-                    Image(systemName: "list.dash")
+                    Image("tabbar-home")
                     Text("Home")
             }
             
-            AddRequestView()
+            RequestView()
                 .tabItem {
-                    Image(systemName: "list.dash")
+                    Image("tabbar-service")
                     Text("Service Request")
             }
             
             ReportView()
                 .tabItem {
-                    Image(systemName: "list.dash")
+                    Image("tabbar-report")
                     Text("Reports")
             }
             
             TransactionView()
                 .tabItem {
-                    Image(systemName: "list.dash")
+                    Image("tabbar-transaction")
                     Text("Transactions")
             }
         }
+        .accentColor(.blue)
     }
 }
 
