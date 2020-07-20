@@ -10,6 +10,7 @@ import SwiftUI
 
 
 struct SummaryView: View {
+    
     var body: some View {
         VStack(alignment: .leading) {
             Image(systemName: "house")
@@ -27,9 +28,9 @@ struct SummaryView: View {
         }
         .padding(.leading, 10)
         .padding(.vertical)
-        .frame(width: (UIScreen.main.bounds.width / 2) - 30)
-          .background(Color.white)
-         .cornerRadius(15)
+        .frame(width: (UIScreen.main.bounds.width / 2) - 25)
+        .background(Color.white)
+        .cornerRadius(15)
     }
 }
 

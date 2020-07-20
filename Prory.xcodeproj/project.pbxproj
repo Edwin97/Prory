@@ -25,7 +25,7 @@
 		E874011A24C4C71700265271 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011924C4C71700265271 /* PropertyCell.swift */; };
 		E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011B24C4C8BB00265271 /* ServiceCategory.swift */; };
 		E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011D24C4C9DC00265271 /* PropertyView.swift */; };
-		E874012024C4CDD300265271 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011F24C4CDD300265271 /* RequestView.swift */; };
+		E874012024C4CDD300265271 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011F24C4CDD300265271 /* ServiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,7 @@
 		E874011924C4C71700265271 /* PropertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
 		E874011B24C4C8BB00265271 /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		E874011D24C4C9DC00265271 /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
-		E874011F24C4CDD300265271 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		E874011F24C4CDD300265271 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +106,11 @@
 		E8175AF624C41E75005C3944 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E842165224C5C45500E2920E /* Transaction */,
 				E8692A8624C4C201008A774D /* Service */,
 				E8175B1024C4B138005C3944 /* Report */,
 				E8175B0824C44895005C3944 /* Home */,
 				E8175AF824C41EA4005C3944 /* AppView.swift */,
-				E8175B0424C4316D005C3944 /* TransactionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,13 +143,21 @@
 			path = Report;
 			sourceTree = "<group>";
 		};
+		E842165224C5C45500E2920E /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				E8175B0424C4316D005C3944 /* TransactionView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
 		E8692A8624C4C201008A774D /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				E8175B0024C43148005C3944 /* AddRequestView.swift */,
 				E874011924C4C71700265271 /* PropertyCell.swift */,
 				E874011B24C4C8BB00265271 /* ServiceCategory.swift */,
-				E874011F24C4CDD300265271 /* RequestView.swift */,
+				E874011F24C4CDD300265271 /* ServiceView.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -230,7 +238,7 @@
 				E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */,
 				E8175AE124C41E53005C3944 /* AppDelegate.swift in Sources */,
 				E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */,
-				E874012024C4CDD300265271 /* RequestView.swift in Sources */,
+				E874012024C4CDD300265271 /* ServiceView.swift in Sources */,
 				E842165024C56D8400E2920E /* PropertyDetailView.swift in Sources */,
 				E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */,
 				E8692A8424C4B7DE008A774D /* MoveView.swift in Sources */,

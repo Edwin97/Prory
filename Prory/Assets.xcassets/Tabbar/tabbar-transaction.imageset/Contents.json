@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "tabbar-transaction.png",
+      "filename" : "icons8-bank-cards-25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "icons8-bank-cards-50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "icons8-bank-cards-75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

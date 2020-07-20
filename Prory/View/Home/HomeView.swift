@@ -18,7 +18,7 @@ struct HomeView: View {
                 VStack(alignment: .leading) {
                     
                     HStack(spacing: 10){
-                        Text("Prory")
+                        Text("Dashboard")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
@@ -29,7 +29,7 @@ struct HomeView: View {
                             
                         }) {
                             
-                            Image(systemName: "line.horizontal.3.decrease")
+                            Image(systemName: "bell")
                                 .font(.system(size: 23))
                                 .foregroundColor(.white)
                         }
@@ -63,7 +63,7 @@ struct HomeView: View {
                             .foregroundColor(.white)
                     }
                 }
-                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 10)
+                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
                 .padding()
                 .background(Color.blue)
                 
@@ -84,13 +84,12 @@ struct HomeView: View {
                     SummaryView()
                     
                 }
-                .padding(.top, 10)
                 
                 HStack(spacing: 15) {
                     SummaryView()
                     SummaryView()
                 }
-                .padding(.top, 10)
+                .padding(.top, 5)
                 Spacer(minLength: 0)
             }
             .edgesIgnoringSafeArea(.top)

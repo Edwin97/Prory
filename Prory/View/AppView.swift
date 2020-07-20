@@ -12,6 +12,7 @@ struct AppView: View {
     
     init() {
         UITabBar.appearance().unselectedItemTintColor = UIColor(named: "default")
+        UITabBar.appearance().backgroundColor = .white
       }
     
     var body: some View {
@@ -22,10 +23,10 @@ struct AppView: View {
                     Text("Home")
             }
             
-            RequestView()
+            ServiceView()
                 .tabItem {
                     Image("tabbar-service")
-                    Text("Service Request")
+                    Text("Services")
             }
             
             ReportView()

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CategorySection: Codable, Identifiable {
+struct KeySummary: Codable, Identifiable {
     var id: UUID
     var image: String
     var total: String

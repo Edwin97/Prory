@@ -17,36 +17,25 @@ struct ReportView: View {
                 .edgesIgnoringSafeArea(.all)
         
         VStack() {
-
             VStack() {
                 VStack(alignment: .leading) {
                     
                     HStack(spacing: 10){
-                        Text("Report")
+                        Text("Reports")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                         
                         Spacer()
-                        
-                        Button(action: {
-                            
-                        }) {
-                            
-                            Image(systemName: "line.horizontal.3.decrease")
-                                .font(.system(size: 23))
-                                .foregroundColor(.white)
-                        }
                     }
                 }
-                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 10)
+                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
                 .padding()
                 .background(Color.blue)
 
                 
                 ScrollView(.vertical, showsIndicators: false) {
-
-                    ForEach(0..<5) { _ in
+                    ForEach(0..<2) { _ in
                         MoveView()
                     }
                 }

@@ -1,14 +1,14 @@
 //
-//  PropertyDetailView.swift
+//  TransactionView.swift
 //  Prory
 //
-//  Created by edwin on 20/07/2020.
+//  Created by edwin on 19/07/2020.
 //  Copyright © 2020 edwin. All rights reserved.
 //
 
 import SwiftUI
 
-struct PropertyDetailView: View {
+struct TransactionView: View {
     var body: some View {
         
         ZStack {
@@ -16,12 +16,23 @@ struct PropertyDetailView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                VStack(alignment: .leading) {
+                    HStack(spacing: 10){
+                        Text("Transactions")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                }
+                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
+                .padding()
+                .background(Color.blue)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    
-                    VStack(spacing: 10) {
+                    VStack() {
                         HStack() {
-                            VStack(alignment: .leading, spacing: 10) {
+                            VStack(alignment: .leading) {
                                 
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text("B-1402")
@@ -43,7 +54,7 @@ struct PropertyDetailView: View {
                                             .font(.subheadline)
                                             .bold()
                                             .foregroundColor(.white)
-                                    
+                                        
                                         Text("Property Manager")
                                             .font(.caption)
                                             .foregroundColor(.white)
@@ -52,12 +63,15 @@ struct PropertyDetailView: View {
                                     Spacer()
                                     
                                     Image(systemName: "message.circle.fill")
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
                                         .foregroundColor(.white)
                                     
                                     Image(systemName: "phone.circle.fill")
+                                        .resizable()
+                                        .frame(width: 35, height: 35)
                                         .foregroundColor(.white)
-                                    
-                                    
+
                                 }
                                 Text("Leased from July 2019 - 2019")
                                     .font(.subheadline)
@@ -118,22 +132,24 @@ struct PropertyDetailView: View {
                     .padding(.leading)
                     .padding(.trailing)
                     
-                    
-                    ForEach(0..<4) { _ in
-                        VStack(spacing: 10) {
+                    ForEach(0..<2) { _ in
+                        VStack {
                             HStack() {
                                 VStack(alignment: .leading, spacing: 5) {
                                     
                                     HStack {
                                         Text("RM 3,000")
-                                            .font(.subheadline)
+                                            .font(.system(size: 23))
                                             .bold()
                                         
                                         Spacer()
                                         Text("pending".uppercased())
-                                            .font(.footnote)
-                                            .foregroundColor(.orange)
+                                            .font(.caption)
                                             .bold()
+                                            .padding(5)
+                                            .background(Color.orange)
+                                            .foregroundColor(.white)
+                                            .cornerRadius(5)
                                     }
                                     Text("Transaction ID: HA18DDLXFS | 10 Nov 2019, 9:00 AM")
                                         .font(.caption)
@@ -141,11 +157,12 @@ struct PropertyDetailView: View {
                                     HStack {
                                         Image(systemName: "calendar")
                                         Text("10 Nov 2019 - 9 Dec 2019")
-                                            .font(.subheadline)
+                                            .font(.footnote)
                                     }
                                 }
                                 Spacer()
-                            }.padding()
+                            }
+                            .padding()
                             
                             HStack() {
                                 
@@ -184,29 +201,29 @@ struct PropertyDetailView: View {
                             }
                             .padding()
                             .overlay(
-                                RoundedRectangle(cornerRadius: 10)
+                                RoundedRectangle(cornerRadius: 0)
                                     .stroke(Color("background"), lineWidth: 2)
                             )
                         }
-                            //                    .padding()
                             .background(Color.white)
                             .cornerRadius(10)
                             .padding(.leading)
                             .padding(.trailing)
-                            .padding(.top)
-                        
-                        
+                            .padding(.bottom)
                     }
                 }
             }
+            
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
-struct PropertyDetailView_Previews: PreviewProvider {
+struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
-        PropertyDetailView()
+        TransactionView()
     }
 }
+
 
 

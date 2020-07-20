@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct RequestView: View {
+struct ServiceView: View {
     var body: some View {
         ZStack {
             Color("background")
@@ -18,51 +18,21 @@ struct RequestView: View {
                 
                 VStack() {
                     VStack(alignment: .leading) {
-                        
-                        HStack(spacing: 10){
-                            Text("Request")
+                        HStack {
+                            Text("Services")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
-                            
                             Spacer()
-                            
-                            Button(action: {
-                                
-                            }) {
-                                
-                                Image(systemName: "line.horizontal.3.decrease")
-                                    .font(.system(size: 23))
-                                    .foregroundColor(.white)
-                            }
                         }
                     }
-                    .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 10)
+                    .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! )
                     .padding()
                     .background(Color.blue)
                     
-                    Button(action: {}) {
-                        HStack() {
-                            Spacer()
-                            Text("Create Service Request".uppercased())
-                                .font(.subheadline)
-                                .bold()
-                            
-                            Image(systemName: "arrow.right")
-                            
-                            Spacer()
-                        }
-                    }
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.yellow)
-                    .cornerRadius(10)
-                    .padding(.leading)
-                    .padding(.trailing)
-                    
                     ScrollView(.vertical, showsIndicators: false) {
                         
-                        ForEach(0..<5) { _ in
+                        ForEach(0..<2) { _ in
                             VStack(spacing: 10) {
                                 HStack() {
                                     VStack(alignment: .leading) {
@@ -126,8 +96,30 @@ struct RequestView: View {
                         }
                     }
                     
+                    VStack {
+                        Button(action: {}) {
+                            HStack() {
+                                Spacer()
+                                Text("Create Service Request".uppercased())
+                                    .font(.subheadline)
+                                    .bold()
+                                
+                                Image(systemName: "arrow.right")
+                                
+                                Spacer()
+                            }
+                        }
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                        .padding(.leading)
+                        .padding(.trailing)
+                    }
+                    .padding()
+                    .background(Color.white)
+                
                     Spacer(minLength: 0)
-                    
                 }
             }
             .edgesIgnoringSafeArea(.top)
@@ -137,6 +129,6 @@ struct RequestView: View {
 
 struct RequestView_Previews: PreviewProvider {
     static var previews: some View {
-        RequestView()
+        ServiceView()
     }
 }

@@ -47,6 +47,7 @@ struct AddRequestView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         
+                        VStack {
                         VStack(alignment: .leading) {
                             Text("Choose Property")
                                 .font(.subheadline)
@@ -72,8 +73,7 @@ struct AddRequestView: View {
                                 .padding([.leading, .trailing], 10)
                                 .background(Color.white)
                                 .cornerRadius(10)
-                            
-                        }.padding()
+                        }
                         
                         VStack(alignment: .leading) {
                             Text("Description")
@@ -87,6 +87,7 @@ struct AddRequestView: View {
                                 .background(Color.white)
                                 .cornerRadius(10)
                             
+                        }
                         }.padding()
                         
                     }

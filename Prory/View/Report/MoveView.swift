@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MoveView: View {
     var body: some View {
-        VStack(spacing: 10) {
+        VStack() {
             HStack() {
                 VStack(alignment: .leading) {
                     
@@ -24,7 +24,6 @@ struct MoveView: View {
             }
             
             HStack() {
-                
                 Image(systemName: "house")
                     .resizable()
                     .frame(width: 20, height: 20)
@@ -47,7 +46,6 @@ struct MoveView: View {
             )
             
             HStack() {
-                
                 Image("profile")
                     .resizable()
                     .frame(width: 40, height: 40)
@@ -63,17 +61,15 @@ struct MoveView: View {
                 }
                 Spacer()
                 Image(systemName: "chevron.right")
-                     .foregroundColor(Color("default"))
+                    .foregroundColor(Color("default"))
             }
-            
-            
-            
-        }   .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .padding(.leading)
-            .padding(.trailing)
-            .padding(.top)
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .padding(.leading)
+        .padding(.trailing)
+        .padding(.top)
     }
 }
 

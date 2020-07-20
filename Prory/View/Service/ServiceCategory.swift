@@ -26,9 +26,6 @@ struct ServiceCategory: View {
             }   .padding()
                 .background(Color.white)
                 .cornerRadius(10)
-                .padding(.leading)
-                .padding(.trailing)
-                .padding(.top)
         }
     }
 }

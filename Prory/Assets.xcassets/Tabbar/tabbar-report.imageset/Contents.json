@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "tabbar-report.png",
+      "filename" : "icons8-receipt-approved-25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "icons8-receipt-approved-50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "icons8-receipt-approved-75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
