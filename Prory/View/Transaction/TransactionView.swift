@@ -15,8 +15,7 @@ struct TransactionView: View {
             Color("background")
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                VStack(alignment: .leading) {
+            VStack(spacing: 0) {
                     HStack(spacing: 10){
                         Text("Transactions")
                             .font(.title)
@@ -24,7 +23,6 @@ struct TransactionView: View {
                             
                         Spacer()
                     }
-                }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
                 .padding()
                 .background(Color.white)
@@ -134,7 +132,7 @@ struct TransactionView: View {
                     .padding(.trailing)
                     
                     ForEach(0..<2) { _ in
-                        VStack {
+                        VStack(spacing: 0) {
                             HStack() {
                                 VStack(alignment: .leading, spacing: 5) {
                                     

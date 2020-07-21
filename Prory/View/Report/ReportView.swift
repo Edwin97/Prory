@@ -10,41 +10,84 @@ import SwiftUI
 
 struct ReportView: View {
     
+    @State var index = 1
     
     var body: some View {
         ZStack {
             Color("background")
                 .edgesIgnoringSafeArea(.all)
-        
-        VStack() {
-            VStack() {
-                VStack(alignment: .leading) {
-                    
-                    HStack(spacing: 10){
+            
+            VStack(spacing: 0) {
+                
+                VStack {
+                    HStack {
                         Text("Reports")
                             .font(.title)
                             .fontWeight(.bold)
                         
                         Spacer()
                     }
+                    .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
+                    .padding()
+                    .background(Color.white)
+                    
+                    MenuBar(index: self.$index)
+                    
                 }
-                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
-                .padding()
-                .background(  Color.white)
-
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(0..<2) { _ in
+                    
+                    ForEach(0..<3) { _ in
                         MoveView()
                     }
+                    
                 }
-                
-                Spacer(minLength: 0)
-                
             }
         }
         .edgesIgnoringSafeArea(.top)
     }
+}
+
+struct MenuBar : View {
+    
+    @Binding var index : Int
+    
+    var body: some View{
+        
+        VStack(alignment: .leading, content: {
+            
+            HStack {
+                Button(action: {
+                    self.index = 1
+                }) {
+                    VStack(spacing: 15){
+                        Text("inspections".uppercased())
+                            .foregroundColor(self.index == 1 ? .blue : .black)
+                            .font(.subheadline)
+                            .bold()
+                        Capsule()
+                            .fill(self.index == 1 ? Color.blue : Color.clear)
+                            .frame(height: 3)
+                    }
+                }
+                
+                Button(action: {
+                    self.index = 2
+                }) {
+                    VStack(spacing: 15){
+                        Text("move-in/move-our".uppercased())
+                            .foregroundColor(self.index == 2 ? .blue : Color.black)
+                            .font(.subheadline)
+                            .bold()
+                        Capsule()
+                            .fill(self.index == 2 ? Color.blue : Color.clear)
+                            .frame(height: 3)
+                    }
+                }
+                
+            }
+        })
+            .background(Color.white)
     }
 }
 
