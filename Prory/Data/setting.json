@@ -1,0 +1,27 @@
+[
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A66",
+        "imageName": "house",
+        "title": "View and edit profile"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A63",
+        "imageName": "house",
+        "title": "Payment"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A60",
+        "imageName": "house",
+        "title": "Reviews"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A61",
+        "imageName": "house",
+        "title": "Need help? Talk to us"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A62",
+        "imageName": "house",
+        "title": "Logout"
+    }
+]

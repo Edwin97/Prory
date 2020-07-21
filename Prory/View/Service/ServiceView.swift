@@ -24,7 +24,6 @@ struct ServiceView: View {
                     Button(action: {
                         
                     }) {
-                        
                         Image(systemName: "plus")
                             .font(.system(size: 23))
                             .foregroundColor(.blue)
@@ -86,17 +85,14 @@ struct ServiceView: View {
                                         .font(.footnote)
                                 }
                                 Spacer()
-                                
                             }
-                            
-                            
-                            
-                        }   .padding()
-                            .background(Color.white)
-                            .cornerRadius(10)
-                            .padding(.leading)
-                            .padding(.trailing)
-                            .padding(.top)
+                        }
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .padding(.leading)
+                        .padding(.trailing)
+                        .padding(.top)
                     }
                 }
             }

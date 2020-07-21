@@ -34,9 +34,9 @@ struct HomeView: View {
                                 .foregroundColor(.white)
                         }
                     }
-                
+                    
                     HStack(spacing: 10){
-                        Image(systemName: "house")
+                        Image("wallet")
                             .resizable()
                             .frame(width: 25, height: 25)
                             .padding()
@@ -57,6 +57,7 @@ struct HomeView: View {
                     
                     HStack {
                         Text("View My Properties")
+                            
                             .font(.subheadline)
                             .foregroundColor(.white)
                         Image(systemName: "arrow.right")
@@ -80,16 +81,15 @@ struct HomeView: View {
                 .padding()
                 
                 HStack(spacing: 15) {
-                    SummaryView()
-                    SummaryView()
-                    
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "property", total: 04, title: "Managed property"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "lease", total: 11, title: "Propert Leases"))
                 }
                 
                 HStack(spacing: 15) {
-                    SummaryView()
-                    SummaryView()
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "service", total: 88, title: "Service Requests"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "inspection", total: 31, title: "House Inpsections"))
                 }
-                .padding(.top, 5)
+                
                 Spacer(minLength: 0)
             }
             .edgesIgnoringSafeArea(.top)

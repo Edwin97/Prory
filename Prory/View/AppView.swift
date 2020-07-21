@@ -40,6 +40,12 @@ struct AppView: View {
                     Image("tabbar-transaction")
                     Text("Transactions")
             }
+            
+            SettingView()
+                .tabItem {
+                    Image("tabbar-profile")
+                    Text("Profile")
+            }
         }
         .accentColor(.blue)
     }

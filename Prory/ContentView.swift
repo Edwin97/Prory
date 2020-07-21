@@ -9,27 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var index = 1
+    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+    
+//       let settingItem = Bundle.main.decode([SettingItem].self, from: "setting.json")
     
     var body: some View {
-        ZStack {
-            Color("background")
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                HStack {
-                    Text("Reports")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    
-                    Spacer()
+        NavigationView {
+            List {
+                ForEach(menu) { section in
+                    Section(header: Text(section.name)) {
+                        Text(section.name)
+                    }
                 }
-                .padding()
-                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
-                .background(Color.white)
-                MenuBar(index: self.$index)
-                Spacer(minLength: 0)
             }
-        }.edgesIgnoringSafeArea(.all)
+            .navigationBarTitle("Menu")
+            .listStyle(GroupedListStyle())
+        }
     }
 }
 

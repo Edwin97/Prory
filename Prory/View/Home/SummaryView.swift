@@ -10,34 +10,31 @@ import SwiftUI
 
 
 struct SummaryView: View {
+    var item: KeySummary
     
     var body: some View {
         VStack(alignment: .leading) {
-            Image(systemName: "house")
+            Image(item.imageName)
                 .resizable()
-                .frame(width: 20, height: 20)
-                .padding(15)
+                .frame(width: 25, height: 25)
+                .padding()
                 .background(Color.black.opacity(0.06))
                 .cornerRadius(15)
-            
-            Text("03")
+            Text(String(item.total))
                 .fontWeight(.bold)
                 .font(.title)
-            Text("Managed Properties")
+            Text(item.title)
                 .font(.subheadline)
         }
-        .padding(.leading, 10)
-        .padding(.vertical)
+        .padding()
         .frame(width: (UIScreen.main.bounds.width / 2) - 25)
         .background(Color.white)
         .cornerRadius(15)
     }
 }
 
-
-
 struct SummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryView()
+        SummaryView(item: KeySummary.example)
     }
 }
