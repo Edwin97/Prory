@@ -17,7 +17,7 @@ struct ReportView: View {
             Color("background")
                 .edgesIgnoringSafeArea(.all)
             
-            VStack(spacing: 0) {
+            VStack(spacing: 15) {
                 
                 VStack {
                     HStack {
@@ -36,11 +36,11 @@ struct ReportView: View {
                 }
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    
-                    ForEach(0..<3) { _ in
-                        MoveView()
+                    VStack(spacing: 15) {
+                        ForEach(0..<2) { _ in
+                            MoveView()
+                        }
                     }
-                    
                 }
             }
         }

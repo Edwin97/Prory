@@ -13,7 +13,7 @@ struct AppView: View {
     init() {
         UITabBar.appearance().unselectedItemTintColor = UIColor(named: "default")
         UITabBar.appearance().backgroundColor = .white
-      }
+    }
     
     var body: some View {
         TabView {

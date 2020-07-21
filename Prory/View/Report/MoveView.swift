@@ -69,7 +69,6 @@ struct MoveView: View {
         .cornerRadius(10)
         .padding(.leading)
         .padding(.trailing)
-        .padding(.top)
     }
 }
 
