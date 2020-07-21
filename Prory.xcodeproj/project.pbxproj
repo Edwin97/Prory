@@ -23,9 +23,12 @@
 		E83AB1F724C6F7780002CAD7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1F624C6F7780002CAD7 /* SettingView.swift */; };
 		E83AB1FB24C6FEB50002CAD7 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */; };
 		E83AB20024C7009E0002CAD7 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1FF24C7009E0002CAD7 /* SettingRow.swift */; };
-		E8411EA924C71703008B4DD0 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EA824C71703008B4DD0 /* menu.json */; };
-		E8411EAB24C721C2008B4DD0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EAA24C721C2008B4DD0 /* Menu.swift */; };
 		E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EAC24C725E6008B4DD0 /* Helper.swift */; };
+		E8411EB124C77248008B4DD0 /* transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EB024C77248008B4DD0 /* transaction.json */; };
+		E8411EB224C7738F008B4DD0 /* setting.json in Resources */ = {isa = PBXBuildFile; fileRef = E869F4BB24C6DF91008C27DA /* setting.json */; };
+		E8411EB324C77391008B4DD0 /* property.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EAE24C771EE008B4DD0 /* property.json */; };
+		E8411EB424C77394008B4DD0 /* report.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EAF24C7722E008B4DD0 /* report.json */; };
+		E8411EB624C778DB008B4DD0 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EB524C778DB008B4DD0 /* Property.swift */; };
 		E842165024C56D8400E2920E /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E842164F24C56D8400E2920E /* PropertyDetailView.swift */; };
 		E8692A8424C4B7DE008A774D /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8692A8324C4B7DE008A774D /* MoveView.swift */; };
 		E874011A24C4C71700265271 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874011924C4C71700265271 /* PropertyCell.swift */; };
@@ -54,9 +57,11 @@
 		E83AB1F624C6F7780002CAD7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
 		E83AB1FF24C7009E0002CAD7 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
-		E8411EA824C71703008B4DD0 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
-		E8411EAA24C721C2008B4DD0 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		E8411EAC24C725E6008B4DD0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E8411EAE24C771EE008B4DD0 /* property.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = property.json; sourceTree = "<group>"; };
+		E8411EAF24C7722E008B4DD0 /* report.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = report.json; sourceTree = "<group>"; };
+		E8411EB024C77248008B4DD0 /* transaction.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = transaction.json; sourceTree = "<group>"; };
+		E8411EB524C778DB008B4DD0 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		E842164F24C56D8400E2920E /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
 		E8692A8324C4B7DE008A774D /* MoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
 		E869F4BB24C6DF91008C27DA /* setting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = setting.json; sourceTree = "<group>"; };
@@ -139,7 +144,7 @@
 			children = (
 				E8175B0624C446EF005C3944 /* Category.swift */,
 				E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */,
-				E8411EAA24C721C2008B4DD0 /* Menu.swift */,
+				E8411EB524C778DB008B4DD0 /* Property.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,8 +200,10 @@
 		E869F4BC24C6DFAA008C27DA /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E8411EA824C71703008B4DD0 /* menu.json */,
 				E869F4BB24C6DF91008C27DA /* setting.json */,
+				E8411EAE24C771EE008B4DD0 /* property.json */,
+				E8411EAF24C7722E008B4DD0 /* report.json */,
+				E8411EB024C77248008B4DD0 /* transaction.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -259,9 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8411EB424C77394008B4DD0 /* report.json in Resources */,
+				E8411EB124C77248008B4DD0 /* transaction.json in Resources */,
 				E8175AED24C41E58005C3944 /* LaunchScreen.storyboard in Resources */,
+				E8411EB324C77391008B4DD0 /* property.json in Resources */,
 				E8175AEA24C41E58005C3944 /* Preview Assets.xcassets in Resources */,
-				E8411EA924C71703008B4DD0 /* menu.json in Resources */,
+				E8411EB224C7738F008B4DD0 /* setting.json in Resources */,
 				E8175AE724C41E58005C3944 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +285,7 @@
 			files = (
 				E8175AF924C41EA4005C3944 /* AppView.swift in Sources */,
 				E8175B0524C4316D005C3944 /* TransactionView.swift in Sources */,
+				E8411EB624C778DB008B4DD0 /* Property.swift in Sources */,
 				E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */,
 				E83AB1F724C6F7780002CAD7 /* SettingView.swift in Sources */,
 				E8175AE124C41E53005C3944 /* AppDelegate.swift in Sources */,
@@ -289,7 +300,6 @@
 				E874011A24C4C71700265271 /* PropertyCell.swift in Sources */,
 				E8175B0724C446EF005C3944 /* Category.swift in Sources */,
 				E8175B0324C4315C005C3944 /* ReportView.swift in Sources */,
-				E8411EAB24C721C2008B4DD0 /* Menu.swift in Sources */,
 				E8175B0A24C448C4005C3944 /* SummaryView.swift in Sources */,
 				E83AB1FB24C6FEB50002CAD7 /* SettingItem.swift in Sources */,
 				E8175AFB24C41F4B005C3944 /* HomeView.swift in Sources */,

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct PropertyView: View {
+    var properties = Bundle.main.decode([Property].self, from: "property.json")
+    
     var body: some View {
         
         ZStack {
@@ -16,19 +18,21 @@ struct PropertyView: View {
                 .edgesIgnoringSafeArea(.all)
             
             ScrollView(.vertical, showsIndicators: false) {
-                ForEach(0..<2) { _ in
-                    VStack(spacing: 10) {
+                ForEach(properties) { property in
+                    VStack(spacing: 6) {
                         HStack() {
-                            VStack(alignment: .leading) {
+                            VStack(alignment: .leading, spacing: 3) {
                                 
-                                Text("Belvedere-1402")
+                                Text(property.unit)
                                     .font(.caption)
-                                Text("Managed Properties")
+                                Text(property.name)
                                     .bold()
                                     .font(.subheadline)
                             }
                             Spacer()
-                        }
+                            Text(property.location)
+                                .font(.footnote)
+                        }.padding()
                         
                         HStack() {
                             
@@ -36,15 +40,15 @@ struct PropertyView: View {
                                 HStack() {
                                     
                                     VStack(alignment: .leading) {
-                                        Text("RM 16,81,000")
+                                        Text(property.currentRent)
                                             .font(.subheadline)
                                             .bold()
-                                        Text("Total Rent Revenue")
+                                        Text("Current Rent")
                                             .font(.footnote)
                                     }.padding()
                                     Spacer()
                                     VStack(alignment: .leading) {
-                                        Text("RM 16,81,000")
+                                        Text(property.totalRent)
                                             .font(.subheadline)
                                             .bold()
                                         Text("Total Rent Revenue")
@@ -58,12 +62,12 @@ struct PropertyView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color("background"), lineWidth: 2)
                         )
-                    }   .padding()
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .padding(.leading)
-                        .padding(.trailing)
-                        .padding(.top)
+                    }
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .padding(.leading)
+                    .padding(.trailing)
+                    .padding(.top)
                     
                     
                 }

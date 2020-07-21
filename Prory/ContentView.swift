@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+    let menu = Bundle.main.decode([SettingItem].self, from: "setting.json")
     
 //       let settingItem = Bundle.main.decode([SettingItem].self, from: "setting.json")
     
@@ -17,8 +17,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(menu) { section in
-                    Section(header: Text(section.name)) {
-                        Text(section.name)
+                    Section(header: Text(section.title)) {
+                        Text(section.imageName)
                     }
                 }
             }
