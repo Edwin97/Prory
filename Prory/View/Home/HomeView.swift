@@ -28,7 +28,6 @@ struct HomeView: View {
                         Button(action: {
                             
                         }) {
-                            
                             Image(systemName: "bell")
                                 .font(.system(size: 23))
                                 .foregroundColor(.white)
@@ -83,13 +82,13 @@ struct HomeView: View {
                 .padding()
                 
                 HStack(spacing: 15) {
-                    SummaryView(item: KeySummary(id: UUID(), imageName: "property", total: 04, title: "Managed property"))
-                    SummaryView(item: KeySummary(id: UUID(), imageName: "lease", total: 11, title: "Rental Leases"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "property", total: "04", title: "Managed property"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "lease", total: "11", title: "Rental Leases"))
                 }
                 
                 HStack(spacing: 15) {
-                    SummaryView(item: KeySummary(id: UUID(), imageName: "service", total: 88, title: "Service Requests"))
-                    SummaryView(item: KeySummary(id: UUID(), imageName: "inspection", total: 31, title: "House Inpsections"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "service", total: "88", title: "Service Requests"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "inspection", total: "31", title: "House Inpsections"))
                 }
                 
                 Spacer(minLength: 0)

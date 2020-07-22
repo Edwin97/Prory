@@ -11,10 +11,10 @@ import SwiftUI
 struct KeySummary: Codable, Identifiable {
     var id: UUID
     var imageName: String
-    var total: Int
+    var total: String
     var title: String
     
     #if DEBUG
-    static let example = KeySummary(id: UUID(), imageName: "house", total: 100, title: "Rented Property")
+    static let example = KeySummary(id: UUID(), imageName: "house", total: "100", title: "Rented Property")
     #endif
 }
