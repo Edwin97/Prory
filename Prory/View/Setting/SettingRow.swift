@@ -102,6 +102,7 @@ struct SettingRow: View {
             }
             .padding()
             .background(Color.white)
+            .padding(.bottom, 10)
             
             HStack() {
                 Text("Order Notification")
@@ -134,6 +135,7 @@ struct SettingRow: View {
             .padding(.top)
             .padding(.bottom)
             .background(Color.white)
+               .padding(.bottom, 10)
             
             HStack() {
                 Text("Log Out")

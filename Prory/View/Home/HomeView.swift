@@ -66,8 +66,10 @@ struct HomeView: View {
                 }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
                 .padding()
-                .background(  Color("strongBlue"))
-                
+                .background(Image("dashboard-background")
+                .resizable()
+                .scaledToFill()
+                )
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 5) {

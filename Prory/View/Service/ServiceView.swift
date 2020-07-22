@@ -38,8 +38,22 @@ struct ServiceView: View {
                     ForEach(0..<2) { _ in
                         VStack(spacing: 10) {
                             HStack() {
+                                VStack(alignment: .center) {
+                                    Text("11:30")
+                                        .font(.footnote)
+                                        .bold()
+                                    Text("AM")
+                                        .bold()
+                                        .font(.system(size: 11))
+                                    .foregroundColor(Color("default"))
+                                }
+                                .padding(8)
+                                .padding(.top, 3)
+                                .padding(.bottom, 3)
+                                .background(Color("background"))
+                                .cornerRadius(10)
+                                
                                 VStack(alignment: .leading) {
-                                    
                                     Text("Belvedere-1402")
                                         .font(.caption)
                                     Text("Managed Properties")
@@ -48,6 +62,8 @@ struct ServiceView: View {
                                 }
                                 Spacer()
                             }
+                            .padding(.leading)
+                            .padding(.top)
                             
                             VStack(alignment: .leading, spacing: 4) {
                                 HStack() {
@@ -55,8 +71,10 @@ struct ServiceView: View {
                                     Image(systemName: "house")
                                         .resizable()
                                         .frame(width: 10, height: 10)
+                                        .foregroundColor(.blue)
                                     Text("Eletrical")
                                         .font(.footnote)
+                                        .foregroundColor(.blue)
                                     
                                     Spacer()
                                 }
@@ -74,20 +92,73 @@ struct ServiceView: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color("background"), lineWidth: 2)
                             )
+                                .padding(.leading)
+                                .padding(.trailing)
                             
                             HStack() {
                                 
-                                VStack(alignment: .leading) {
+                                VStack(alignment: .leading, spacing: 5) {
                                     
-                                    Text("Requestor: Anuj Vernua (Tenant)")
-                                        .font(.footnote)
-                                    Text("Vendor: Rekesh (LG Service)")
-                                        .font(.footnote)
+                                    HStack {
+                                        Image(systemName: "circle.fill")
+                                            .resizable()
+                                            .frame(width: 8, height: 8)
+                                        Text("Requestor: Anuj Vernua (Tenant)")
+                                         .font(.footnote)
+                                    }
+                                    
+                                    HStack {
+                                        Image(systemName: "circle.fill")
+                                            .resizable()
+                                            .frame(width: 8, height: 8)
+                                        Text("Vendor: Rekesh (LG Service)")
+                                            .font(.footnote)
+                                    }
                                 }
                                 Spacer()
                             }
+                            .padding(.leading)
+                            
+                            HStack() {
+                                VStack(alignment: .leading) {
+                                    HStack() {
+                                        
+                                        VStack(alignment: .leading) {
+                                            Button(action: {}) {
+                                                HStack() {
+                                                    Spacer()
+                                                    Image(systemName: "location")
+                                                    Text("Direction")
+                                                        .font(.footnote)
+                                                        .bold()
+                                                    Spacer()
+                                                }
+                                            }
+                                        }
+                                        Spacer()
+                                        VStack(alignment: .leading) {
+                                            Button(action: {}) {
+                                                HStack() {
+                                                    Spacer()
+                                                    Image(systemName: "phone")
+                                                    Text("Call Now")
+                                                        .font(.footnote)
+                                                        .bold()
+                                                    Spacer()
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                                Spacer()
+                            }
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 0)
+                                    .stroke(Color("background"), lineWidth: 2)
+                            )
                         }
-                        .padding()
                         .background(Color.white)
                         .cornerRadius(10)
                         .padding(.leading)
