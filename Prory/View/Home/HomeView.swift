@@ -11,9 +11,7 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        
-        NavigationView {
-            ZStack {
+        ZStack {
             Color("background")
                 .edgesIgnoringSafeArea(.all)
             VStack() {
@@ -57,15 +55,12 @@ struct HomeView: View {
                     }
                     
                     HStack {
-                        NavigationLink(destination: PropertyView()) {
-                            Text("View My Properties")
-                                                       
-                                                       .font(.subheadline)
-                                                       .foregroundColor(.white)
-                                                   Image(systemName: "arrow.right")
-                                                       .foregroundColor(.white)
-                        }
-        
+                        Text("View My Properties")
+                            
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.white)
                     }
                 }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
@@ -99,7 +94,6 @@ struct HomeView: View {
                 Spacer(minLength: 0)
             }
             .edgesIgnoringSafeArea(.top)
-        }
         }
     }
 }
