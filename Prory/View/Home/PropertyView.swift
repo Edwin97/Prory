@@ -68,8 +68,6 @@ struct PropertyView: View {
                     .padding(.leading)
                     .padding(.trailing)
                     .padding(.top)
-                    
-                    
                 }
             }
         }

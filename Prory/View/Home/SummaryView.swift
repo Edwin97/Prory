@@ -23,8 +23,11 @@ struct SummaryView: View {
             Text(String(item.total))
                 .fontWeight(.bold)
                 .font(.title)
+            HStack {
             Text(item.title)
                 .font(.subheadline)
+                Spacer(minLength: 0)
+            }
         }
         .padding()
         .frame(width: (UIScreen.main.bounds.width / 2) - 25)

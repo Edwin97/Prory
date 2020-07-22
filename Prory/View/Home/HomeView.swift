@@ -84,7 +84,7 @@ struct HomeView: View {
                 
                 HStack(spacing: 15) {
                     SummaryView(item: KeySummary(id: UUID(), imageName: "property", total: 04, title: "Managed property"))
-                    SummaryView(item: KeySummary(id: UUID(), imageName: "lease", total: 11, title: "Propert Leases"))
+                    SummaryView(item: KeySummary(id: UUID(), imageName: "lease", total: 11, title: "Rental Leases"))
                 }
                 
                 HStack(spacing: 15) {

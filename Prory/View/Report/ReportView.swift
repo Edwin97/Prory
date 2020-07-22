@@ -61,7 +61,7 @@ struct MenuBar : View {
                     self.index = 1
                 }) {
                     VStack(spacing: 15){
-                        Text("inspections".uppercased())
+                        Text("Inspections")
                             .foregroundColor(self.index == 1 ? .blue : .black)
                             .font(.subheadline)
                             .bold()
@@ -75,7 +75,7 @@ struct MenuBar : View {
                     self.index = 2
                 }) {
                     VStack(spacing: 15){
-                        Text("move-in/move-our".uppercased())
+                        Text("Move-in/Move-out")
                             .foregroundColor(self.index == 2 ? .blue : Color.black)
                             .font(.subheadline)
                             .bold()
