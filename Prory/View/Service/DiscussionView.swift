@@ -10,6 +10,7 @@ import SwiftUI
 
 struct DiscussionView: View {
     @State private var message: String = ""
+       var messages = Bundle.main.decode([Discussion].self, from: "discussion.json")
     
     var body: some View {
         ZStack {
@@ -33,10 +34,10 @@ struct DiscussionView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 15) {
-                        ForEach(0..<1) { _ in
+                        ForEach(messages) { message in
                             
                             HStack(alignment: .top) {
-                                Image("profile")
+                                Image(message.imageName)
                                     .resizable()
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
@@ -48,10 +49,10 @@ struct DiscussionView: View {
                                         
                                         VStack(alignment: .leading, spacing: 3) {
                                             
-                                            Text("Request Reopened")
+                                            Text(message.title)
                                                 .font(.subheadline)
                                                 .bold()
-                                            Text("By Edwin Chan")
+                                            Text("By \(message.name)")
                                                 .font(.caption)
                                                 .foregroundColor(Color("default"))
                                         }
@@ -59,12 +60,12 @@ struct DiscussionView: View {
                                     }
                                     
                                     HStack() {
-                                        Text("Remarks: Wall has slight cracks through which water has started seeping in during the rainy season. The mould has also started to grow which is unbearable")
+                                        Text(message.message)
                                             .font(.caption)
                                     }
                                     
                                     HStack() {
-                                        Text("9th Nov 2019, 4: 30 PM")
+                                        Text(message.dateTime)
                                             .font(.caption)
                                             .foregroundColor(Color("default"))
                                     }

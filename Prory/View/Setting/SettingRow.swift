@@ -17,7 +17,7 @@ struct SettingRow: View {
         VStack(spacing: 2) {
         
             HStack() {
-                Image("profile")
+                Image("edwin-profile")
                     .resizable()
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())

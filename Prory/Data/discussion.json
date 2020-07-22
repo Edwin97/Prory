@@ -1,0 +1,42 @@
+[
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A64",
+        "title": "Estimate Added",
+        "name": "Thomas how",
+        "imageName": "thomas-profile",
+        "message": "Remarks: Popular bendor in this area. They say they will fix it within a day.",
+        "dateTime": "2th Nov 2019, 4:30 PM"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A63",
+        "title": "Job Scheduled",
+        "name": "Denise",
+        "imageName": "denise-profile",
+        "message": "The work-job has been scheduled to be executed 13 Dec, 2019 (11 AM to 12 PM)",
+        "dateTime": "3th Nov 2019, 4:30 PM"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A62",
+        "title": "Request Closed",
+        "name": "Jason Chong",
+        "imageName": "jason-profile",
+        "message": "Remarks: Wall has sight of cracks through which water has started seeping in during the rainy season",
+        "dateTime": "7th Nov 2019, 4:30 PM"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A62",
+        "title": "Request Closed",
+        "name": "Jason Chong",
+        "imageName": "jason-profile",
+        "message": "Remarks: Wall has sight of cracks through which water has started seeping in during the rainy season",
+        "dateTime": "7th Nov 2019, 4:30 PM"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A61",
+        "title": "Request Reopened",
+        "name": "Edwin Chan",
+        "imageName": "edwin-profile",
+        "message": "Unsettle issue, pending respond from tenant",
+        "dateTime": "9th Nov 2019, 4:30 PM"
+    }
+]

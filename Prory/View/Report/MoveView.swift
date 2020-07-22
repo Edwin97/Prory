@@ -46,7 +46,7 @@ struct MoveView: View {
             )
             
             HStack() {
-                Image("profile")
+                Image("edwin-profile")
                     .resizable()
                     .frame(width: 40, height: 40)
                     .cornerRadius(10)
