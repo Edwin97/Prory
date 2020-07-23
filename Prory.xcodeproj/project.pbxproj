@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		E83AB1F724C6F7780002CAD7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1F624C6F7780002CAD7 /* SettingView.swift */; };
 		E83AB1FB24C6FEB50002CAD7 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */; };
 		E83AB20024C7009E0002CAD7 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1FF24C7009E0002CAD7 /* SettingRow.swift */; };
+		E840D97324C95D6100E0365B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E840D97224C95D6100E0365B /* GoogleService-Info.plist */; };
 		E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EAC24C725E6008B4DD0 /* Helper.swift */; };
 		E8411EB124C77248008B4DD0 /* transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EB024C77248008B4DD0 /* transaction.json */; };
 		E8411EB224C7738F008B4DD0 /* setting.json in Resources */ = {isa = PBXBuildFile; fileRef = E869F4BB24C6DF91008C27DA /* setting.json */; };
@@ -67,6 +68,7 @@
 		E83AB1F624C6F7780002CAD7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
 		E83AB1FF24C7009E0002CAD7 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
+		E840D97224C95D6100E0365B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8411EAC24C725E6008B4DD0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		E8411EAE24C771EE008B4DD0 /* property.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = property.json; sourceTree = "<group>"; };
 		E8411EAF24C7722E008B4DD0 /* report.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = report.json; sourceTree = "<group>"; };
@@ -116,7 +118,6 @@
 				5868097346BE7BB5031E210E /* Pods-Prory.debug.xcconfig */,
 				EF50914C1B8371C60A46A36D /* Pods-Prory.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,6 +152,7 @@
 				E8175AE624C41E58005C3944 /* Assets.xcassets */,
 				E8175AEB24C41E58005C3944 /* LaunchScreen.storyboard */,
 				E8175AEE24C41E58005C3944 /* Info.plist */,
+				E840D97224C95D6100E0365B /* GoogleService-Info.plist */,
 				E8175AE824C41E58005C3944 /* Preview Content */,
 			);
 			path = Prory;
@@ -321,6 +323,7 @@
 				E8411EB324C77391008B4DD0 /* property.json in Resources */,
 				E857E49924C8A839002473D3 /* service.json in Resources */,
 				E8175AEA24C41E58005C3944 /* Preview Assets.xcassets in Resources */,
+				E840D97324C95D6100E0365B /* GoogleService-Info.plist in Resources */,
 				E8411EB224C7738F008B4DD0 /* setting.json in Resources */,
 				E8175AE724C41E58005C3944 /* Assets.xcassets in Resources */,
 			);
