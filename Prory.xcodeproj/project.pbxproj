@@ -25,7 +25,11 @@
 		E83AB1FB24C6FEB50002CAD7 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */; };
 		E83AB20024C7009E0002CAD7 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AB1FF24C7009E0002CAD7 /* SettingRow.swift */; };
 		E840D97324C95D6100E0365B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E840D97224C95D6100E0365B /* GoogleService-Info.plist */; };
-		E840D97624C9674200E0365B /* PropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97524C9674200E0365B /* PropertiesViewModel.swift */; };
+		E840D97624C9674200E0365B /* PropertyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97524C9674200E0365B /* PropertyViewModel.swift */; };
+		E840D97824C99B6900E0365B /* ServiceVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97724C99B6900E0365B /* ServiceVIewModel.swift */; };
+		E840D97A24C99B7D00E0365B /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97924C99B7D00E0365B /* TransactionViewModel.swift */; };
+		E840D97C24C99BA600E0365B /* MoveInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97B24C99BA600E0365B /* MoveInViewModel.swift */; };
+		E840D97E24C99BB800E0365B /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97D24C99BB800E0365B /* InspectionViewModel.swift */; };
 		E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EAC24C725E6008B4DD0 /* Helper.swift */; };
 		E8411EB124C77248008B4DD0 /* transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EB024C77248008B4DD0 /* transaction.json */; };
 		E8411EB324C77391008B4DD0 /* property.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EAE24C771EE008B4DD0 /* property.json */; };
@@ -69,7 +73,11 @@
 		E83AB1FA24C6FEB50002CAD7 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
 		E83AB1FF24C7009E0002CAD7 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 		E840D97224C95D6100E0365B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E840D97524C9674200E0365B /* PropertiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewModel.swift; sourceTree = "<group>"; };
+		E840D97524C9674200E0365B /* PropertyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewModel.swift; sourceTree = "<group>"; };
+		E840D97724C99B6900E0365B /* ServiceVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceVIewModel.swift; sourceTree = "<group>"; };
+		E840D97924C99B7D00E0365B /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		E840D97B24C99BA600E0365B /* MoveInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInViewModel.swift; sourceTree = "<group>"; };
+		E840D97D24C99BB800E0365B /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
 		E8411EAC24C725E6008B4DD0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		E8411EAE24C771EE008B4DD0 /* property.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = property.json; sourceTree = "<group>"; };
 		E8411EAF24C7722E008B4DD0 /* report.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = report.json; sourceTree = "<group>"; };
@@ -226,7 +234,11 @@
 		E840D97424C9672000E0365B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E840D97524C9674200E0365B /* PropertiesViewModel.swift */,
+				E840D97524C9674200E0365B /* PropertyViewModel.swift */,
+				E840D97724C99B6900E0365B /* ServiceVIewModel.swift */,
+				E840D97924C99B7D00E0365B /* TransactionViewModel.swift */,
+				E840D97B24C99BA600E0365B /* MoveInViewModel.swift */,
+				E840D97D24C99BB800E0365B /* InspectionViewModel.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -396,23 +408,27 @@
 				E8411EBE24C854AC008B4DD0 /* Discussion.swift in Sources */,
 				E8175AE124C41E53005C3944 /* AppDelegate.swift in Sources */,
 				E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */,
+				E840D97C24C99BA600E0365B /* MoveInViewModel.swift in Sources */,
 				E881573324C5FA11008802E1 /* WelcomeView.swift in Sources */,
 				E874012024C4CDD300265271 /* ServiceView.swift in Sources */,
 				E842165024C56D8400E2920E /* PropertyDetailView.swift in Sources */,
 				E874011E24C4C9DC00265271 /* PropertyView.swift in Sources */,
 				E8692A8424C4B7DE008A774D /* MoveView.swift in Sources */,
+				E840D97824C99B6900E0365B /* ServiceVIewModel.swift in Sources */,
 				E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */,
 				E8175AE324C41E53005C3944 /* SceneDelegate.swift in Sources */,
 				E874011A24C4C71700265271 /* PropertyCell.swift in Sources */,
-				E840D97624C9674200E0365B /* PropertiesViewModel.swift in Sources */,
+				E840D97624C9674200E0365B /* PropertyViewModel.swift in Sources */,
 				E8175B0724C446EF005C3944 /* Category.swift in Sources */,
 				E8175B0324C4315C005C3944 /* ReportView.swift in Sources */,
 				E8175B0A24C448C4005C3944 /* SummaryView.swift in Sources */,
 				E83AB1FB24C6FEB50002CAD7 /* SettingItem.swift in Sources */,
 				E8175AFB24C41F4B005C3944 /* HomeView.swift in Sources */,
 				E8175AE524C41E53005C3944 /* ContentView.swift in Sources */,
+				E840D97E24C99BB800E0365B /* InspectionViewModel.swift in Sources */,
 				E8411EBA24C84852008B4DD0 /* DiscussionView.swift in Sources */,
 				E83AB20024C7009E0002CAD7 /* SettingRow.swift in Sources */,
+				E840D97A24C99B7D00E0365B /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

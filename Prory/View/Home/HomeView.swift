@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var showProperty = false
     
     var body: some View {
         ZStack {
@@ -55,12 +56,19 @@ struct HomeView: View {
                     }
                     
                     HStack {
-                        Text("View My Properties")
-                            
-                            .font(.subheadline)
-                            .foregroundColor(.white)
-                        Image(systemName: "arrow.right")
-                            .foregroundColor(.white)
+                        Button(action: {
+                            self.showProperty.toggle()
+                        }) {
+                            Text("View My Properties")
+                                
+                                .font(.subheadline)
+                                .foregroundColor(.white)
+                            Image(systemName: "arrow.right")
+                                .foregroundColor(.white)
+                        }
+                        .sheet(isPresented: $showProperty) {
+                            PropertyView()
+                        }
                     }
                 }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)

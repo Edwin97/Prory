@@ -26,7 +26,7 @@ struct AppView: View {
                     Text("Home")
             }
             
-            PropertyView()
+            ServiceView()
                 .tabItem {
                     Image("tabbar-service")
                     Text("Services")

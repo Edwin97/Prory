@@ -1,5 +1,5 @@
 //
-//  getPropertyData.swift
+//  ServiceVIewModel.swift
 //  Prory
 //
 //  Created by edwin on 23/07/2020.
@@ -9,7 +9,7 @@
 import SwiftUI
 import Firebase
 
-class PropertiesViewModel: ObservableObject{
+class serviceViewModel: ObservableObject{
     
     @Published var properties = [Property]()
     
@@ -17,7 +17,7 @@ class PropertiesViewModel: ObservableObject{
     
     func fetchData(){
         
-        db.collection("property").addSnapshotListener { (querySnapshot, err) in
+        db.collection("service").addSnapshotListener { (querySnapshot, err) in
             guard let documents = querySnapshot?.documents else {
                  print("No documents")
                  return

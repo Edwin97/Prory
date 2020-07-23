@@ -9,23 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    let menu = Bundle.main.decode([SettingItem].self, from: "setting.json")
-    
-//       let settingItem = Bundle.main.decode([SettingItem].self, from: "setting.json")
-    
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(menu) { section in
-                    Section(header: Text(section.title)) {
-                        Text(section.imageName)
-                    }
-                }
-            }
-            .navigationBarTitle("Menu")
-            .listStyle(GroupedListStyle())
-        }
-    }
+   @State var showingDetail = false
+
+       var body: some View {
+           Button(action: {
+               self.showingDetail.toggle()
+           }) {
+               Text("Show Detail")
+           }.sheet(isPresented: $showingDetail) {
+               DiscussionView()
+           }
+       }
 }
 
 struct ContentView_Previews: PreviewProvider {
