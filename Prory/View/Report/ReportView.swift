@@ -34,14 +34,7 @@ struct ReportView: View {
                     MenuBar(index: self.$index)
                     
                 }
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 15) {
-                        ForEach(0..<2) { _ in
-                            MoveView()
-                        }
-                    }
-                }
+                InspectionView()
             }
         }
         .edgesIgnoringSafeArea(.top)

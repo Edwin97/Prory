@@ -173,7 +173,7 @@ struct ServiceView: View {
 }
 
 
-struct RequestView_Previews: PreviewProvider {
+struct ServiceView_Previews: PreviewProvider {
     static var previews: some View {
         ServiceView()
     }

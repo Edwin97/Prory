@@ -1,0 +1,42 @@
+[
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A62",
+        "date": "10",
+        "unit": "015A-890",
+        "name": "Kota Kinabalu",
+        "description": "The property is maintained in good shape overall except some minor damages",
+        "by": "Karren lee"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6366",
+        "date": "03",
+        "unit": "011C-120",
+        "name": "Serimba Terrace",
+        "description": "The property is maintained in good shape overall except some minor damages",
+        "by": "Eric how"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E0026A66",
+        "date": "05",
+        "unit": "011A-120",
+        "name": "Tresna Triandra",
+        "description": "The property is maintained in good shape overall except some minor damages",
+        "by": "Nathan wong"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6366",
+        "date": "14",
+        "unit": "015E-089",
+        "name": "Botanica CT5",
+        "description": "The property is maintained in good shape overall except some minor damages",
+        "by": "Danny tham"
+    },
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A16",
+        "date": "10",
+        "unit": "012E-339",
+        "name": "Taman Adenium",
+        "description": "The property is maintained in good shape overall except some minor damages",
+        "by": "Wilson lee"
+    }
+]
