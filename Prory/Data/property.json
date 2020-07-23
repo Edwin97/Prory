@@ -1,29 +1,5 @@
 [
     {
-        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A61",
-        "unit": "015A-890",
-        "name": "Jesselton Twin Towers",
-        "location": "Damai, Kota Kinabalu",
-        "currentRent": "RM 4,300",
-        "totalRent": "RM 16,800"
-    },
-    {
-        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A62",
-        "unit": "011C-120",
-        "name": "Serimba Terrace",
-        "location": "Bandar Bukit Mahkota",
-        "currentRent": "RM 6,100",
-        "totalRent": "RM 33,120"
-    },
-    {
-        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A63",
-        "unit": "011A-120",
-        "name": "Tresna Triandra",
-        "location": "Saujana Perdana",
-        "currentRent": "RM 2,210",
-        "totalRent": "RM 9,100"
-    },
-    {
         "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A64",
         "unit": "015E-089",
         "name": "Botanica CT5",

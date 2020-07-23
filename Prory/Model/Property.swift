@@ -9,7 +9,7 @@
 import Foundation
 
 struct Property: Codable, Identifiable {
-    var id: UUID
+    var id: String
     var unit: String
     var name: String
     var location: String
@@ -17,6 +17,6 @@ struct Property: Codable, Identifiable {
     var totalRent: String
     
     #if DEBUG
-    static let example = Property(id: UUID(), unit: "011C-120", name: "Serimba Terrace", location: "Bandar Bukit Mahkota", currentRent: "RM 2,212", totalRent: "RM 18,880")
+    static let example = Property(id: "1", unit: "011C-120", name: "Serimba Terrace", location: "Bandar Bukit Mahkota", currentRent: "RM 2,212", totalRent: "RM 18,880")
     #endif
 }
