@@ -4,7 +4,7 @@
 [![Swift 5](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org)
 [![Twitter: @edwinchan97](https://img.shields.io/badge/Contact-Twitter-blue.svg?style=flat)](https://twitter.com/edwinchan97)
 
-Prory is an property management simplified iOS app written in SwiftUI.
+Prory is a property management solution that provides all the resources you need to manage your rental property, at your fingertips. The simple yet powerful design of the mobile app makes it easy for the house-owners to handle the property related issues at any point of time.
 
 <h3>
 <kbd><img src="screenshot.gif" width="300" alt="Screenshot of Prory" /></kbd>
