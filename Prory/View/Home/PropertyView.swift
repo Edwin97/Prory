@@ -56,7 +56,6 @@ struct PropertyView: View {
                             }.padding()
                             
                             HStack() {
-                                
                                 VStack(alignment: .leading) {
                                     HStack() {
                                         
