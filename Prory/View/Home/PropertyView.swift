@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PropertyView: View {
-    @ObservedObject private var viewModel = PropertyViewModel()
+    var properties = Bundle.main.decode([Property].self, from: "property.json")
     
     var body: some View {
         
@@ -39,7 +39,7 @@ struct PropertyView: View {
                 }
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(viewModel.properties) { property in
+                    ForEach(properties) { property in
                         VStack(spacing: 6) {
                             HStack() {
                                 VStack(alignment: .leading, spacing: 3) {
@@ -92,9 +92,7 @@ struct PropertyView: View {
                     }
                 }
             }
-        }.onAppear {
-             self.viewModel.fetchData()
-         }
+        }
     }
  
 }
