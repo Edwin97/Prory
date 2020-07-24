@@ -34,7 +34,12 @@ struct ReportView: View {
                     MenuBar(index: self.$index)
                     
                 }
-                InspectionView()
+                
+                if self.index == 1 {
+                    InspectionView()
+                } else if self.index == 2 {
+                    MoveView()
+                }
             }
         }
         .edgesIgnoringSafeArea(.top)

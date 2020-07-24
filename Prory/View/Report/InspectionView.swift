@@ -12,21 +12,18 @@ struct InspectionView: View {
     var services = Bundle.main.decode([Service].self, from: "service.json")
     
     var body: some View {
-        ZStack {
-            Color("background")
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack(spacing: 0) {
-
-                ScrollView(.vertical, showsIndicators: false) {
+        
+        VStack(spacing: 0) {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 0) {
                     ForEach(services) { service in
-                        VStack(spacing: 10) {
+                        VStack(spacing: 0) {
                             HStack() {
                                 VStack(alignment: .center) {
                                     Text("NOV")
                                         .bold()
                                         .font(.system(size: 11))
-                                    .foregroundColor(Color("default"))
+                                        .foregroundColor(Color("default"))
                                     Text(service.date)
                                         .font(.footnote)
                                         .bold()
@@ -48,7 +45,7 @@ struct InspectionView: View {
                             }
                             .padding(.leading)
                             .padding(.top)
-                                                        
+                            
                             HStack() {
                                 
                                 VStack(alignment: .leading, spacing: 5) {
@@ -56,7 +53,7 @@ struct InspectionView: View {
                                     HStack {
                                         Text("Overview")
                                             .font(.footnote)
-                                        .bold()
+                                            .bold()
                                     }
                                     
                                     HStack {
@@ -72,19 +69,19 @@ struct InspectionView: View {
                                 Spacer()
                             }
                             .padding(.leading)
-                             .padding(.trailing)
-                             .padding(.bottom)
+                            .padding(.trailing)
+                            .padding(.bottom)
                         }
                         .background(Color.white)
                         .cornerRadius(10)
                         .padding(.leading)
                         .padding(.trailing)
-                        .padding(.top)
+                        .padding(.bottom)
                     }
                 }
             }
         }
-        .edgesIgnoringSafeArea(.top)
+        
     }
 }
 
