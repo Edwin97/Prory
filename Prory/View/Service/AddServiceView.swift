@@ -39,7 +39,6 @@ struct AddServiceView: View {
                     .padding()
                     .background(Color.white)
                     
-                    
                     ScrollView(.vertical, showsIndicators: false) {
                         
                         VStack {

@@ -31,6 +31,7 @@
 		E840D97C24C99BA600E0365B /* MoveInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97B24C99BA600E0365B /* MoveInViewModel.swift */; };
 		E840D97E24C99BB800E0365B /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97D24C99BB800E0365B /* InspectionViewModel.swift */; };
 		E840D98024CAA42C00E0365B /* SeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97F24CAA42C00E0365B /* SeperatorView.swift */; };
+		E840D98224CAD22500E0365B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D98124CAD22500E0365B /* Transaction.swift */; };
 		E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EAC24C725E6008B4DD0 /* Helper.swift */; };
 		E8411EB124C77248008B4DD0 /* transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EB024C77248008B4DD0 /* transaction.json */; };
 		E8411EB324C77391008B4DD0 /* property.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EAE24C771EE008B4DD0 /* property.json */; };
@@ -80,6 +81,7 @@
 		E840D97B24C99BA600E0365B /* MoveInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInViewModel.swift; sourceTree = "<group>"; };
 		E840D97D24C99BB800E0365B /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
 		E840D97F24CAA42C00E0365B /* SeperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperatorView.swift; sourceTree = "<group>"; };
+		E840D98124CAD22500E0365B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		E8411EAC24C725E6008B4DD0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		E8411EAE24C771EE008B4DD0 /* property.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = property.json; sourceTree = "<group>"; };
 		E8411EAF24C7722E008B4DD0 /* report.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = report.json; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				E8411EB524C778DB008B4DD0 /* Property.swift */,
 				E8411EBD24C854AC008B4DD0 /* Discussion.swift */,
 				E857E49A24C8AA1B002473D3 /* Service.swift */,
+				E840D98124CAD22500E0365B /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				E8175B0524C4316D005C3944 /* TransactionView.swift in Sources */,
 				E8411EB624C778DB008B4DD0 /* Property.swift in Sources */,
 				E874011C24C4C8BB00265271 /* ServiceCategory.swift in Sources */,
+				E840D98224CAD22500E0365B /* Transaction.swift in Sources */,
 				E8411EB824C8263E008B4DD0 /* InvoiceView.swift in Sources */,
 				E83AB1F724C6F7780002CAD7 /* SettingView.swift in Sources */,
 				E8411EBE24C854AC008B4DD0 /* Discussion.swift in Sources */,

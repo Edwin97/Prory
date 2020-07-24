@@ -17,16 +17,25 @@ struct InvoiceView: View {
             
             VStack(spacing: 15) {
                 
-                HStack(spacing: 10){
-                    Text("Invoice")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Spacer()
+                VStack(alignment: .leading) {
+                    
+                    HStack(spacing: 10){
+                        Image(systemName: "xmark")
+                            .padding(.leading)
+                        
+                        Spacer()
+                        
+                        Text("Invoice")
+                            .font(.headline)
+                            .padding(.trailing)
+                        
+                        Spacer()
+                    }
                 }
-                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
+                .padding(.top, 5)
                 .padding()
                 .background(Color.white)
-                
+
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 15) {
                         VStack(spacing: 0) {

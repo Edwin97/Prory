@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct TransactionView: View {
+    @State private var showInvoice = false
+    @ObservedObject private var viewModel = TransactionViewModel()
+    
     var body: some View {
         
         ZStack {
@@ -103,7 +106,9 @@ struct TransactionView: View {
                         .padding(.leading)
                         .padding(.trailing)
                         
-                        Button(action: {}) {
+                        Button(action: {
+                            self.showInvoice.toggle()
+                        }) {
                             HStack() {
                                 Spacer()
                                 Text("Request Rent Receipt".uppercased())
@@ -116,6 +121,8 @@ struct TransactionView: View {
                                 
                                 Spacer()
                             }
+                        }.sheet(isPresented: $showInvoice) {
+                            InvoiceView()
                         }
                         .padding()
                         .foregroundColor(.white)
@@ -124,31 +131,31 @@ struct TransactionView: View {
                         .padding(.leading)
                         .padding(.trailing)
                         
-                        ForEach(0..<2) { _ in
+                        ForEach(viewModel.transactions) { transaction in
                             VStack(spacing: 0) {
                                 HStack() {
                                     VStack(alignment: .leading, spacing: 5) {
                                         
                                         HStack {
-                                            Text("RM 3,000")
+                                            Text(transaction.rent)
                                                 .font(.system(size: 23))
                                                 .bold()
                                             
                                             Spacer()
-                                            Text("pending".uppercased())
+                                            Text(transaction.status.uppercased())
                                                 .font(.caption)
                                                 .bold()
                                                 .padding(5)
-                                                .background(Color.orange)
+                                                .background((transaction.status == "pending") ? Color.orange : Color.green)
                                                 .foregroundColor(.white)
                                                 .cornerRadius(5)
                                         }
-                                        Text("Transaction ID: HA18DDLXFS | 10 Nov 2019, 9:00 AM")
+                                        Text(transaction.description)
                                             .font(.caption)
                                         
                                         HStack {
                                             Image(systemName: "calendar")
-                                            Text("10 Nov 2019 - 9 Dec 2019")
+                                            Text(transaction.date)
                                                 .font(.footnote)
                                         }
                                     }
@@ -164,21 +171,8 @@ struct TransactionView: View {
                                                 Button(action: {}) {
                                                     HStack() {
                                                         Spacer()
-                                                        Image(systemName: "checkmark.circle")
-                                                        Text("Mark as Paid")
-                                                            .font(.footnote)
-                                                            .bold()
-                                                        Spacer()
-                                                    }
-                                                }
-                                            }
-                                            Spacer()
-                                            VStack(alignment: .leading) {
-                                                Button(action: {}) {
-                                                    HStack() {
-                                                        Spacer()
-                                                        Image(systemName: "dollarsign.circle")
-                                                        Text("Pay Now")
+                                                        Image(systemName: "eye")
+                                                        Text("View Details")
                                                             .font(.footnote)
                                                             .bold()
                                                         Spacer()

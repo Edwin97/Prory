@@ -11,11 +11,11 @@ import Firebase
 
 class TransactionViewModel: ObservableObject{
     
-    @Published var properties = [Property]()
+    @Published var transactions = [Transaction]()
     
     private var db = Firestore.firestore()
     
-    func fetchData(){
+    init(){
         
         db.collection("transaction").addSnapshotListener { (querySnapshot, err) in
             guard let documents = querySnapshot?.documents else {
@@ -23,17 +23,16 @@ class TransactionViewModel: ObservableObject{
                  return
                }
             
-            self.properties = documents.map { queryDocumentSnapshot -> Property in
+            self.transactions = documents.map { queryDocumentSnapshot -> Transaction in
                 
                 let data = queryDocumentSnapshot.data()
                 let id = data["id"] as? String ?? ""
-                let unit = data["unit"] as? String ?? ""
-                let name = data["name"] as? String ?? ""
-                let location = data["location"] as? String ?? ""
-                let currentRent = data["currentRent"] as? String ?? ""
-                let totalRent = data["totalRent"] as? String ?? ""
+                let rent = data["rent"] as? String ?? ""
+                let description = data["description"] as? String ?? ""
+                let date = data["date"] as? String ?? ""
+                let status = data["status"] as? String ?? ""
                 
-                return (Property(id: id, unit: unit, name: name, location: location, currentRent: currentRent, totalRent: totalRent))
+                return (Transaction(id: id, date: date, rent: rent, description: description, status: status))
             }
         }
     }

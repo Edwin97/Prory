@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PropertyView: View {
-    @ObservedObject var viewModel = PropertyViewModel()
+    @ObservedObject private var viewModel = PropertyViewModel()
     
     var body: some View {
         

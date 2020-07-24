@@ -45,6 +45,7 @@ struct InspectionView: View {
                             }
                             .padding(.leading)
                             .padding(.top)
+                            .padding(.bottom)
                             
                             HStack() {
                                 
