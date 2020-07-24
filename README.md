@@ -4,7 +4,7 @@
 [![Swift 5](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org)
 [![Twitter: @edwinchan97](https://img.shields.io/badge/Contact-Twitter-blue.svg?style=flat)](https://twitter.com/edwinchan97)
 
-Prory is an iOS app developed by [Edwin Chan](https://twitter.com/EdwinChan97) and written in SwiftUI.
+Prory is an property management simplified iOS app written in SwiftUI.
 
 <h3>
 <kbd><img src="screenshot.gif" width="300" alt="Screenshot of Prory" /></kbd>
@@ -24,9 +24,6 @@ This project is written in Swift 5.0 and requires Xcode 11.5 or newer to build a
 
 Prory is compatible with iOS 13.5+.
 
-## Author
-
-* [Edwin Chan](https://twitter.com/EdwinChan97)
 
 ## License
 
