@@ -23,10 +23,3 @@ pod install
 This project is written in Swift 5.0 and requires Xcode 11.5 or newer to build and run.
 
 Prory is compatible with iOS 13.5+.
-
-
-## License
-
-Copyright 2020 Edwin Chan.
-
-Licensed under MIT License: https://opensource.org/licenses/MIT
