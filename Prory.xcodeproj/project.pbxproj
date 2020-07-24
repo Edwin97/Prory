@@ -16,7 +16,7 @@
 		E8175AED24C41E58005C3944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175AEB24C41E58005C3944 /* LaunchScreen.storyboard */; };
 		E8175AF924C41EA4005C3944 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175AF824C41EA4005C3944 /* AppView.swift */; };
 		E8175AFB24C41F4B005C3944 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175AFA24C41F4B005C3944 /* HomeView.swift */; };
-		E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0024C43148005C3944 /* AddRequestView.swift */; };
+		E8175B0124C43148005C3944 /* AddServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0024C43148005C3944 /* AddServiceView.swift */; };
 		E8175B0324C4315C005C3944 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0224C4315C005C3944 /* ReportView.swift */; };
 		E8175B0524C4316D005C3944 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0424C4316D005C3944 /* TransactionView.swift */; };
 		E8175B0724C446EF005C3944 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175B0624C446EF005C3944 /* Category.swift */; };
@@ -30,6 +30,7 @@
 		E840D97A24C99B7D00E0365B /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97924C99B7D00E0365B /* TransactionViewModel.swift */; };
 		E840D97C24C99BA600E0365B /* MoveInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97B24C99BA600E0365B /* MoveInViewModel.swift */; };
 		E840D97E24C99BB800E0365B /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97D24C99BB800E0365B /* InspectionViewModel.swift */; };
+		E840D98024CAA42C00E0365B /* SeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840D97F24CAA42C00E0365B /* SeperatorView.swift */; };
 		E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8411EAC24C725E6008B4DD0 /* Helper.swift */; };
 		E8411EB124C77248008B4DD0 /* transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EB024C77248008B4DD0 /* transaction.json */; };
 		E8411EB324C77391008B4DD0 /* property.json in Resources */ = {isa = PBXBuildFile; fileRef = E8411EAE24C771EE008B4DD0 /* property.json */; };
@@ -64,7 +65,7 @@
 		E8175AEE24C41E58005C3944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8175AF824C41EA4005C3944 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		E8175AFA24C41F4B005C3944 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E8175B0024C43148005C3944 /* AddRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestView.swift; sourceTree = "<group>"; };
+		E8175B0024C43148005C3944 /* AddServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServiceView.swift; sourceTree = "<group>"; };
 		E8175B0224C4315C005C3944 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		E8175B0424C4316D005C3944 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		E8175B0624C446EF005C3944 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		E840D97924C99B7D00E0365B /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		E840D97B24C99BA600E0365B /* MoveInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInViewModel.swift; sourceTree = "<group>"; };
 		E840D97D24C99BB800E0365B /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
+		E840D97F24CAA42C00E0365B /* SeperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperatorView.swift; sourceTree = "<group>"; };
 		E8411EAC24C725E6008B4DD0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		E8411EAE24C771EE008B4DD0 /* property.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = property.json; sourceTree = "<group>"; };
 		E8411EAF24C7722E008B4DD0 /* report.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = report.json; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				E8175AEE24C41E58005C3944 /* Info.plist */,
 				E840D97224C95D6100E0365B /* GoogleService-Info.plist */,
 				E8175AE824C41E58005C3944 /* Preview Content */,
+				E840D97F24CAA42C00E0365B /* SeperatorView.swift */,
 			);
 			path = Prory;
 			sourceTree = "<group>";
@@ -255,7 +258,7 @@
 		E8692A8624C4C201008A774D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E8175B0024C43148005C3944 /* AddRequestView.swift */,
+				E8175B0024C43148005C3944 /* AddServiceView.swift */,
 				E874011924C4C71700265271 /* PropertyCell.swift */,
 				E874011B24C4C8BB00265271 /* ServiceCategory.swift */,
 				E874011F24C4CDD300265271 /* ServiceView.swift */,
@@ -407,7 +410,7 @@
 				E83AB1F724C6F7780002CAD7 /* SettingView.swift in Sources */,
 				E8411EBE24C854AC008B4DD0 /* Discussion.swift in Sources */,
 				E8175AE124C41E53005C3944 /* AppDelegate.swift in Sources */,
-				E8175B0124C43148005C3944 /* AddRequestView.swift in Sources */,
+				E8175B0124C43148005C3944 /* AddServiceView.swift in Sources */,
 				E840D97C24C99BA600E0365B /* MoveInViewModel.swift in Sources */,
 				E881573324C5FA11008802E1 /* WelcomeView.swift in Sources */,
 				E874012024C4CDD300265271 /* ServiceView.swift in Sources */,
@@ -416,6 +419,7 @@
 				E8692A8424C4B7DE008A774D /* MoveView.swift in Sources */,
 				E840D97824C99B6900E0365B /* ServiceVIewModel.swift in Sources */,
 				E8411EAD24C725E6008B4DD0 /* Helper.swift in Sources */,
+				E840D98024CAA42C00E0365B /* SeperatorView.swift in Sources */,
 				E8175AE324C41E53005C3944 /* SceneDelegate.swift in Sources */,
 				E874011A24C4C71700265271 /* PropertyCell.swift in Sources */,
 				E840D97624C9674200E0365B /* PropertyViewModel.swift in Sources */,

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ServiceView: View {
+     @State var showService = false
+    
     var body: some View {
         ZStack {
             Color("background")
@@ -22,11 +24,13 @@ struct ServiceView: View {
                     Spacer()
                     
                     Button(action: {
-                        
+                        self.showService.toggle()
                     }) {
                         Image(systemName: "plus")
                             .font(.system(size: 23))
                             .foregroundColor(.blue)
+                    }.sheet(isPresented: $showService) {
+                        AddServiceView()
                     }
                 }
                 .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! )
@@ -83,7 +87,6 @@ struct ServiceView: View {
                                     .bold()
                                 Text("The fidge is leaking water and is not able to cool properly for last 15 days")
                                     .font(.footnote)
-                                
                                 Spacer()
                                 
                             }

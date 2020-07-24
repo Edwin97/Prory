@@ -13,19 +13,117 @@ struct ServiceCategory: View {
         VStack(alignment: .leading) {
             
             HStack() {
-                Image(systemName: "flame")
-                
-                VStack(alignment: .leading) {
-                    
-                    Text("Managed Properties")
+                HStack {
+                    Image("add-wall-painting")
+                        .font(.footnote)
+                    Text("Wall Painting")
                         .bold()
-                        .font(.subheadline)
-                }
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
                 Spacer()
                 
-            }   .padding()
-                .background(Color.white)
-                .cornerRadius(10)
+                HStack {
+                    Image("add-plumber")
+                        .font(.footnote)
+                    Text("Plumber")
+                        .bold()
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+            }
+            HStack() {
+                HStack {
+                    Image("add-interior")
+                        .font(.footnote)
+                    Text("Interior")
+                        .bold()
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+                Spacer()
+                
+                HStack {
+                    Image("add-construction")
+                        .font(.footnote)
+                    Text("Construction")
+                        .bold()
+                        .font(.caption)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+            }
+            HStack() {
+                HStack {
+                    Image("add-bug")
+                        .font(.footnote)
+                    Text("Paste Control")
+                        .bold()
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+                Spacer()
+                
+                HStack {
+                    Image("add-cleaning")
+                        .font(.footnote)
+                    Text("Cleaning")
+                        .bold()
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+            }
+            HStack() {
+                HStack {
+                    Image("add-repair")
+                        .font(.footnote)
+                    Text("Repair")
+                        .bold()
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+                Spacer()
+                
+                HStack {
+                    Image("add-more")
+                        .font(.footnote)
+                    Text("Other")
+                        .bold()
+                        .font(.footnote)
+                    
+                    Spacer()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
+            }
         }
     }
 }

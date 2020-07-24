@@ -14,21 +14,33 @@ struct PropertyCell: View {
             
             HStack() {
                 Image(systemName: "circle")
-                
                 VStack(alignment: .leading) {
-                    
-                    Text("Belvedere-1402")
+                    Text("011C-120")
                         .font(.caption)
-                    Text("Managed Properties")
+                    Text("Bandar Bukit Mahkota")
                         .bold()
                         .font(.subheadline)
                 }
                 Spacer()
-                
-            }   .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-          
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            
+            HStack() {
+                Image(systemName: "circle")
+                VStack(alignment: .leading) {
+                    Text("015A-890")
+                        .font(.caption)
+                    Text("Damai, Kota Kinabalu")
+                        .bold()
+                        .font(.subheadline)
+                }
+                Spacer()
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
         }
     }
 }
